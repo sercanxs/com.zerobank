@@ -11,8 +11,8 @@ import org.junit.runner.RunWith;
                 "rerun:target/rerun.txt"},
         features = "src/test/resources/features",
         glue = "com/zerobank/step_definitions",
-        dryRun = false,
-        tags = "@wip1"
+        dryRun = true,
+        tags = "@login"
 )
 public class CukesRunner {
 }
