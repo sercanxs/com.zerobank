@@ -1,5 +1,6 @@
 package com.zerobank.stepdefinitions;
 
+import com.zerobank.pages.LoginPage;
 import com.zerobank.utilities.ConfigurationReader;
 import com.zerobank.utilities.Driver;
 import io.cucumber.java.en.Given;
@@ -17,6 +18,15 @@ public class LoginStepDefs {
 
 
     }
+    @Given("the user is logged in")
+    public void the_user_is_logged_in() throws InterruptedException {
+
+
+        LoginPage loginpage = new LoginPage();
+        loginpage.LoginPage();
+
+    }
+
     @When("the user enters the {string} {string}")
     public void the_user_enters_the(String username, String password) throws InterruptedException {
         Driver.get().findElement(By.id("user_login")).sendKeys(username);
