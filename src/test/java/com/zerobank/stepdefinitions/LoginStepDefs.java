@@ -33,10 +33,10 @@ public class LoginStepDefs {
     @Then("the user should be able to login")
     public void the_user_should_be_able_to_login() {
         if (!Driver.get().getTitle().equals(ConfigurationReader.get("login"))) {
-            Driver.get().findElement(By.id("details-button")).click();
-            Driver.get().findElement(By.id("proceed-link")).click();
+        Driver.get().navigate().back();
+            Assert.assertTrue("You are not in the main page with valid crendetials", ConfigurationReader.get("main").equals(Driver.get().getTitle()));
         } else {
-            if(!ConfigurationReader.get("dashboard").equals(Driver.get().getTitle()));
+            if(!ConfigurationReader.get("main").equals(Driver.get().getTitle()));
             {
                 System.out.println("You are not in the same Page");
                 System.out.println(Driver.get().findElement(By.xpath("//form[@id='login_form']/div[1]")).getText());
