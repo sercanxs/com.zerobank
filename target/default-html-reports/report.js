@@ -10,7 +10,7 @@ formatter.feature({
   ]
 });
 formatter.scenario({
-  "name": "Account Dropdown should have the other options.",
+  "name": "Transaction Table should have following column names",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -46,9 +46,8 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Account Dropdown should have all expected options.",
+  "name": "Transaction Table should have following column names",
   "rows": [
-    {},
     {},
     {},
     {},
@@ -57,7 +56,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.account_Dropdown_should_have_all_expected_options(java.util.List\u003cjava.lang.String\u003e)"
+  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.transaction_Table_should_have_following_column_names(java.util.List\u003cjava.lang.String\u003e)"
 });
 formatter.result({
   "status": "passed"

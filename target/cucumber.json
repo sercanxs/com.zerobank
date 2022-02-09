@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-02-09T16:31:14.577Z",
+        "start_timestamp": "2022-02-09T16:45:07.827Z",
         "before": [
           {
             "result": {
-              "duration": 6500928500,
+              "duration": 6056424900,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 14,
-        "name": "Account Dropdown should have the other options.",
+        "line": 24,
+        "name": "Transaction Table should have following column names",
         "description": "",
-        "id": "account-activity-page-should-have-the-title-zero---account-activity;account-dropdown-should-have-the-other-options.",
+        "id": "account-activity-page-should-have-the-title-zero---account-activity;transaction-table-should-have-following-column-names",
         "after": [
           {
             "result": {
-              "duration": 742239400,
+              "duration": 779576400,
               "status": "passed"
             },
             "match": {
@@ -35,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 4326050000,
+              "duration": 4492217900,
               "status": "passed"
             },
-            "line": 15,
+            "line": 25,
             "name": "the user is logged in",
             "match": {
               "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_is_logged_in()"
@@ -47,10 +47,10 @@
           },
           {
             "result": {
-              "duration": 1613725600,
+              "duration": 1945931200,
               "status": "passed"
             },
-            "line": 16,
+            "line": 26,
             "name": "the user should be able lands on \"aa\"",
             "match": {
               "arguments": [
@@ -65,38 +65,33 @@
           },
           {
             "result": {
-              "duration": 170799200,
+              "duration": 174411900,
               "status": "passed"
             },
-            "line": 17,
-            "name": "Account Dropdown should have all expected options.",
+            "line": 27,
+            "name": "Transaction Table should have following column names",
             "match": {
-              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.account_Dropdown_should_have_all_expected_options(java.util.List\u003cjava.lang.String\u003e)"
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.transaction_Table_should_have_following_column_names(java.util.List\u003cjava.lang.String\u003e)"
             },
             "rows": [
               {
                 "cells": [
-                  "Savings"
+                  "Date"
                 ]
               },
               {
                 "cells": [
-                  "Checking"
+                  "Description"
                 ]
               },
               {
                 "cells": [
-                  "Loan"
+                  "Deposit"
                 ]
               },
               {
                 "cells": [
-                  "Credit Card"
-                ]
-              },
-              {
-                "cells": [
-                  "Brokerage"
+                  "Withdrawal"
                 ]
               }
             ],

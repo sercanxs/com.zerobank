@@ -76,7 +76,16 @@ public class AboutOnlineBanking {
 
 
     }
+    @Then("Transaction Table should have following column names")
+    public void transaction_Table_should_have_following_column_names(List<String> columns) {
+        String text = Driver.get().findElement(By.xpath("//*[text()='Description']/..")).getText();
+        for (String column : columns) {
 
+           Assert.assertTrue("Actual columns aren't same with expected columns",text.contains(column));
+
+        }
+
+    }
 
 
 
