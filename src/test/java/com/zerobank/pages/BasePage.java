@@ -41,7 +41,7 @@ public abstract class BasePage {
             case "as":
                 accountSummary.click();
                 break;
-            case "AA":
+            case "aa":
                 accountActivity.click();
                 break;
             case "tf":
