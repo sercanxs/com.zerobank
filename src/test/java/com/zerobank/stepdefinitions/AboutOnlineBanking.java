@@ -19,8 +19,6 @@ import java.util.List;
 public class AboutOnlineBanking {
 
 
-
-
     @When("the user should be able lands on {string}")
     public void the_user_should_be_able_lands_on(String string) {
 
@@ -66,6 +64,7 @@ public class AboutOnlineBanking {
         Driver.get().findElement(By.id("aa_description")).sendKeys(string);
         Thread.sleep(3000);
     }
+
     @When("select for type {string}")
     public void select_for_type(String string) {
         WebElement element = Driver.get().findElement(By.id("aa_type"));
@@ -108,23 +107,28 @@ public class AboutOnlineBanking {
         Assert.assertTrue("Related date isn't sorted as expected", datelasttwo >= Integer.parseInt(date2.substring(date2.length() - 2)));
 
     }
+
     @Then("results table should'nt show {string}")
     public void results_table_should_nt_show(String string) {
         List<WebElement> elements = Driver.get().findElements(By.xpath("//div[@id='filtered_transactions_for_account']/table/tbody/tr"));
         int size = elements.size();
         String column = null;
-        int y=0;
-        int z=0;
-        if(string.equals("Deposit")){y=3;}else{y=4;}
+        int y = 0;
+        int z = 0;
+        if (string.equals("Deposit")) {
+            y = 3;
+        } else {
+            y = 4;
+        }
 
         for (int x = 1; x <= size; x++) {
-            column = Driver.get().findElement(By.xpath("//div[@id='filtered_transactions_for_account']/table/tbody/tr[" + x + "]/td["+y+"]")).getAttribute("innerHTML");
-            if(!column.isBlank()){
+            column = Driver.get().findElement(By.xpath("//div[@id='filtered_transactions_for_account']/table/tbody/tr[" + x + "]/td[" + y + "]")).getAttribute("innerHTML");
+            if (!column.isBlank()) {
                 ++z;
             }
 
         }
-        Assert.assertTrue("Results musn't have "+string+" value, but there more than 0 " ,z==0 );
+        Assert.assertTrue("Results musn't have " + string + " value, but there more than 0 ", z == 0);
 
     }
 
@@ -134,19 +138,22 @@ public class AboutOnlineBanking {
         List<WebElement> elements = Driver.get().findElements(By.xpath("//div[@id='filtered_transactions_for_account']/table/tbody/tr"));
         int size = elements.size();
         String column = null;
-        int y=0;
-        int z=0;
-        if(string.equals("Deposit")){y=3;}else{y=4;}
+        int y = 0;
+        int z = 0;
+        if (string.equals("Deposit")) {
+            y = 3;
+        } else {
+            y = 4;
+        }
 
         for (int x = 1; x <= size; x++) {
-            column = Driver.get().findElement(By.xpath("//div[@id='filtered_transactions_for_account']/table/tbody/tr[" + x + "]/td["+y+"]")).getAttribute("innerHTML");
-           if(!column.isBlank()){
-               ++z;
-           }
+            column = Driver.get().findElement(By.xpath("//div[@id='filtered_transactions_for_account']/table/tbody/tr[" + x + "]/td[" + y + "]")).getAttribute("innerHTML");
+            if (!column.isBlank()) {
+                ++z;
+            }
 
         }
-        Assert.assertTrue("Results table has'nt got enough "+string+" value ", z>=int1);
-
+        Assert.assertTrue("Results table has'nt got enough " + string + " value ", z >= int1);
 
 
     }

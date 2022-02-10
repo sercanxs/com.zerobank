@@ -1,5 +1,5 @@
 @ft
-Feature: Find Transations in Account Activity
+Feature: Find Transactions in Account Activity
 
   Scenario Outline: Search Date Range
     Given the user is logged in
