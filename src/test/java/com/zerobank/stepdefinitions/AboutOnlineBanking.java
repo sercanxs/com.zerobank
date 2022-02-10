@@ -83,13 +83,26 @@ Driver.get().findElement(By.id("np_new_payee_details")).sendKeys(PayeeDetails);
 Driver.get().findElement(By.id("add_new_payee")).click();
 
     }
-    @When("click the pay")
-    public void click_the_pay() {
+    @When("click the purchase with {string}")
+    public void click_the_purchase_with(String string) {
+      if(string.equals("currency")){
+          WebElement currencies = Driver.get().findElement(By.id("pc_currency"));
+          Select select = new Select(currencies);
+          List<WebElement> options = select.getOptions();
+          int size =options.size();
+          select.selectByIndex(size-1);
+      }else{
+
+          Driver.get().findElement(By.id("pc_amount")).sendKeys("100");
+      }
         PayBills pb = new PayBills();
         pb.purchasebutton.click();
     }
-    @Then("error message should be displayed for not selecting currency")
-    public void error_message_should_be_displayed_for_not_selecting_currency() {
+
+
+
+    @Then("error message should be displayed for not selecting input")
+    public void error_message_should_be_displayed_for_not_selecting_input() {
 
         Alert alert = Driver.get().switchTo().alert();
     Assert.assertTrue("Alert part isn't expected",alert.getText().contains(" valid values."));

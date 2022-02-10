@@ -1,3 +1,4 @@
+@pfn
 Feature: Purchase foreign currency
 
 
@@ -22,10 +23,15 @@ Feature: Purchase foreign currency
       | Singapore (dollar)    |
       | Thailand (baht)       |
 
-  @190
-  Scenario: Error message for not selecting currency
+
+  Scenario Outline: Error message for not selecting <currency>
     Given the user is logged in
     And the user should be able lands on "pb"
     And click the "Purchase Foreign Currency"
-    And click the pay
-    Then error message should be displayed for not selecting currency
+    When click the purchase with "<amount>"
+    Then error message should be displayed for not selecting input
+
+    Examples:
+      | currency | amount   |
+      | currency | amount   |
+      | amount   | currency |
