@@ -20,7 +20,7 @@ Feature: Account Activity page should have the title Zero - Account Activity
       | Loan        |
       | Credit Card |
       | Brokerage   |
-@190
+
   Scenario: Transaction Table should have following column names
     Given the user is logged in
     When the user should be able lands on "aa"
