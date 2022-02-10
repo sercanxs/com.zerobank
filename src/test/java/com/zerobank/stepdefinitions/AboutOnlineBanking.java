@@ -80,9 +80,20 @@ Driver.get().findElement(By.id("np_new_payee_account")).sendKeys(Account);
 Driver.get().findElement(By.id("np_new_payee_details")).sendKeys(PayeeDetails);
 Driver.get().findElement(By.id("add_new_payee")).click();
 
+    }
+    @Then("following curriencies should be avaliable")
+    public void following_curriencies_should_be_avaliable(List<String> expectedcurriencies) {
+        WebElement actualcurriencies = Driver.get().findElement(By.id("pc_currency"));
+        Select select = new Select(actualcurriencies);
+        for (WebElement option : select.getOptions()) {
+
+            Assert.assertTrue("Foreign currencies aren't same with expected",expectedcurriencies.contains(option.getText()));
+        }
 
 
     }
+
+
     @Then("message The new payee {string} was succesfully created. should be displayed")
     public void message_The_new_payee_was_succesfully_created_should_be_displayed(String string) {
         String text = Driver.get().findElement(By.xpath("//*[@id='alert_content']")).getAttribute("innerHTML");
