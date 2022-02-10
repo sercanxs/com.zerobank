@@ -2,6 +2,7 @@ package com.zerobank.stepdefinitions;
 
 import com.zerobank.pages.OBPages;
 import com.zerobank.utilities.Driver;
+import io.cucumber.java.bs.A;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -33,7 +34,7 @@ public class AboutOnlineBanking {
 
     }
 
-    @When("Click the {string}")
+    @When("click the {string}")
     public void click_the(String string) {
         if (string.equals("Credit Card")){
             Driver.get().findElement(By.xpath("(//*[text()='"+string+"'])[2]")).click();
@@ -41,6 +42,31 @@ public class AboutOnlineBanking {
         Driver.get().findElement(By.xpath("//*[text()='" + string + "']")).click();
 
     }
+    @When("the user enters data range from {string} to {string}")
+    public void the_user_enters_data_range_from_to(String date1, String date2) {
+      Driver.get().findElement(By.id("aa_fromDate")).sendKeys(date1);
+      Driver.get().findElement(By.id("aa_toDate")).sendKeys(date2);
+    }
+
+    @Then("the results should be sorted from most recent date {string} to oldest date {string}")
+    public void the_results_should_be_sorted_from_most_recent_date_to_oldest_date(String date1, String date2) {
+
+        List<WebElement> elements = Driver.get().findElements(By.xpath("//div[@id='filtered_transactions_for_account']/table/tbody/tr"));
+        int size = elements.size();
+        String datevalue =null;
+        int datelasttwo = Integer.parseInt( date1.substring(date1.length()-2));
+        for (int x=1;x<=size;x++) {
+            datevalue = Driver.get().findElement(By.xpath("//div[@id='filtered_transactions_for_account']/table/tbody/tr[" + x + "]/td")).getAttribute("innerHTML");
+
+
+            Assert.assertTrue("Related date isn't sorted as expected",datelasttwo>=Integer.parseInt( datevalue.substring(datevalue.length()-2)));
+            datelasttwo=Integer.parseInt( datevalue.substring(datevalue.length()-2));
+
+        }
+        Assert.assertTrue("Related date isn't sorted as expected",datelasttwo>=Integer.parseInt(date2.substring(date2.length()-2)));
+
+    }
+
 
     @Then("first selected option must be {string}")
     public void first_selected_option_must_be(String string) {
