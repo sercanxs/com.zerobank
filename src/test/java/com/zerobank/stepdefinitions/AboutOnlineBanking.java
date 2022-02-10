@@ -25,6 +25,32 @@ public class AboutOnlineBanking {
 
     }
 
+    @When("User should able to complete pay operation {string} {string}")
+    public void user_should_able_to_complete_pay_operation(String string, String string2) {
+        Driver.get().findElement(By.id("sp_amount")).sendKeys(string);
+        Driver.get().findElement(By.id("sp_date")).sendKeys(string2);
+        Driver.get().findElement(By.id("pay_saved_payees")).click();
+
+    }
+    @Then("user should able to get this message {string}")
+    public void user_should_able_to_get_this_message(String string) {
+        String actual = Driver.get().findElement(By.xpath("//div[@id='alert_content']/span")).getAttribute("innerHTML");
+        Assert.assertTrue("they are not same",string.equals(actual));
+    }
+    @Then("user should able to get this failed message {string}")
+    public void user_should_able_to_get_this_failed_message(String string) {
+        String actual = Driver.get().findElement(By.id("sp_amount")).getAttribute("validationMessage");
+        Assert.assertTrue("they are not same",string.equals(actual));
+
+    }
+    @Then("User should able to get failed message for datainput {string}")
+    public void user_should_able_to_get_failed_message_for_datainput(String string) {
+        String actual = Driver.get().findElement(By.id("sp_date")).getAttribute("validationMessage");
+        Assert.assertTrue("they are not same",string.equals(actual));
+
+    }
+
+
     @Then("this page should have the title {string}")
     public void this_page_should_have_the_title(String expected) {
         OBPages obpages = new OBPages();
@@ -87,7 +113,13 @@ public class AboutOnlineBanking {
 
     }
 
+public static void m1(){
 
+
+
+
+
+}
 
 
 
