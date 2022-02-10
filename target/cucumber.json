@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-02-10T15:31:35.594Z",
+        "start_timestamp": "2022-02-10T16:44:18.656Z",
         "before": [
           {
             "result": {
-              "duration": 8607551400,
+              "duration": 8860499500,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 67,
-        "name": "Type",
+        "line": 14,
+        "name": "Add a new payee",
         "description": "",
-        "id": "find-transations-in-account-activity;type;;2",
+        "id": "add-new-payee-under-pay-bills;add-a-new-payee;;2",
         "after": [
           {
             "result": {
-              "duration": 799129500,
+              "duration": 1043327900,
               "status": "passed"
             },
             "match": {
@@ -35,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 4535438200,
+              "duration": 4568572600,
               "status": "passed"
             },
-            "line": 49,
+            "line": 5,
             "name": "the user is logged in",
             "match": {
               "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_is_logged_in()"
@@ -47,15 +47,15 @@
           },
           {
             "result": {
-              "duration": 1615770400,
+              "duration": 1413109000,
               "status": "passed"
             },
-            "line": 50,
-            "name": "the user should be able lands on \"aa\"",
+            "line": 6,
+            "name": "the user should be able lands on \"pb\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"aa\"",
+                  "val": "\"pb\"",
                   "offset": 33
                 }
               ],
@@ -65,15 +65,15 @@
           },
           {
             "result": {
-              "duration": 3088672600,
+              "duration": 3103143600,
               "status": "passed"
             },
-            "line": 51,
-            "name": "click the \"Find Transactions\"",
+            "line": 7,
+            "name": "click the \"Add New Payee\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Find Transactions\"",
+                  "val": "\"Add New Payee\"",
                   "offset": 10
                 }
               ],
@@ -83,217 +83,51 @@
           },
           {
             "result": {
-              "duration": 3157711800,
+              "duration": 1020132700,
               "status": "passed"
             },
-            "line": 52,
-            "name": "click the \"Find\"",
+            "line": 8,
+            "name": "enter new payee information \"The Law Offices of Hyde, Price \u0026amp; Scharks\"\"100 Same st, Anytown, USA, 10001\"\"Checking\"\"XYZ account\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Find\"",
-                  "offset": 10
-                }
-              ],
-              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.click_the(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 253126500,
-              "status": "passed"
-            },
-            "line": 53,
-            "name": "results table should show at least 1 result \"Deposit\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1",
-                  "offset": 35
+                  "val": "\"The Law Offices of Hyde, Price \u0026amp; Scharks\"",
+                  "offset": 28
                 },
                 {
-                  "val": "\"Deposit\"",
-                  "offset": 44
-                }
-              ],
-              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.results_table_should_show_at_least_result(java.lang.Integer,java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 212475600,
-              "status": "passed"
-            },
-            "line": 54,
-            "name": "results table should show at least 1 result \"Withdrawal\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1",
-                  "offset": 35
+                  "val": "\"100 Same st, Anytown, USA, 10001\"",
+                  "offset": 74
                 },
                 {
-                  "val": "\"Withdrawal\"",
-                  "offset": 44
-                }
-              ],
-              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.results_table_should_show_at_least_result(java.lang.Integer,java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 223638800,
-              "status": "passed"
-            },
-            "line": 55,
-            "name": "select for type \"Deposit\"",
-            "match": {
-              "arguments": [
+                  "val": "\"Checking\"",
+                  "offset": 108
+                },
                 {
-                  "val": "\"Deposit\"",
-                  "offset": 16
+                  "val": "\"XYZ account\"",
+                  "offset": 118
                 }
               ],
-              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.select_for_type(java.lang.String)"
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.enter_new_payee_information(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3084660900,
+              "duration": 159820400,
               "status": "passed"
             },
-            "line": 56,
-            "name": "click the \"Find\"",
+            "line": 9,
+            "name": "message The new payee \"The Law Offices of Hyde, Price \u0026amp; Scharks\" was succesfully created. should be displayed",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Find\"",
-                  "offset": 10
+                  "val": "\"The Law Offices of Hyde, Price \u0026amp; Scharks\"",
+                  "offset": 22
                 }
               ],
-              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.click_the(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 158460800,
-              "status": "passed"
-            },
-            "line": 57,
-            "name": "results table should show at least 1 result \"Deposit\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1",
-                  "offset": 35
-                },
-                {
-                  "val": "\"Deposit\"",
-                  "offset": 44
-                }
-              ],
-              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.results_table_should_show_at_least_result(java.lang.Integer,java.lang.String)"
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.message_The_new_payee_was_succesfully_created_should_be_displayed(java.lang.String)"
             },
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 115929000,
-              "status": "passed"
-            },
-            "line": 58,
-            "name": "results table should\u0027nt show \"Withdrawal\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Withdrawal\"",
-                  "offset": 29
-                }
-              ],
-              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.results_table_should_nt_show(java.lang.String)"
-            },
-            "keyword": "But "
-          },
-          {
-            "result": {
-              "duration": 191047500,
-              "status": "passed"
-            },
-            "line": 59,
-            "name": "select for type \"Withdrawal\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Withdrawal\"",
-                  "offset": 16
-                }
-              ],
-              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.select_for_type(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3074452800,
-              "status": "passed"
-            },
-            "line": 60,
-            "name": "click the \"Find\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Find\"",
-                  "offset": 10
-                }
-              ],
-              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.click_the(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 88408800,
-              "status": "passed"
-            },
-            "line": 61,
-            "name": "results table should show at least 1 result \"Withdrawal\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1",
-                  "offset": 35
-                },
-                {
-                  "val": "\"Withdrawal\"",
-                  "offset": 44
-                }
-              ],
-              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.results_table_should_show_at_least_result(java.lang.Integer,java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 106716400,
-              "status": "passed"
-            },
-            "line": 62,
-            "name": "results table should\u0027nt show \"Deposit\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Deposit\"",
-                  "offset": 29
-                }
-              ],
-              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.results_table_should_nt_show(java.lang.String)"
-            },
-            "keyword": "But "
           }
         ],
         "tags": [
@@ -303,11 +137,11 @@
         ]
       }
     ],
-    "name": "Find Transations in Account Activity",
+    "name": "Add new payee under pay bills",
     "description": "",
-    "id": "find-transations-in-account-activity",
+    "id": "add-new-payee-under-pay-bills",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/FindTransactions.feature",
+    "uri": "file:src/test/resources/features/New%20Payee.feature",
     "tags": []
   }
 ]

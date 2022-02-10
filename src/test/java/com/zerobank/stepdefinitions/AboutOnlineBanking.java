@@ -72,6 +72,27 @@ public class AboutOnlineBanking {
         select.selectByVisibleText(string);
 
     }
+    @When("enter new payee information {string}{string}{string}{string}")
+    public void enter_new_payee_information(String PayeeName, String PayeeAddress, String Account, String PayeeDetails) {
+Driver.get().findElement(By.id("np_new_payee_name")).sendKeys(PayeeName);
+Driver.get().findElement(By.id("np_new_payee_address")).sendKeys(PayeeAddress);
+Driver.get().findElement(By.id("np_new_payee_account")).sendKeys(Account);
+Driver.get().findElement(By.id("np_new_payee_details")).sendKeys(PayeeDetails);
+Driver.get().findElement(By.id("add_new_payee")).click();
+
+
+
+    }
+    @Then("message The new payee {string} was succesfully created. should be displayed")
+    public void message_The_new_payee_was_succesfully_created_should_be_displayed(String string) {
+        String text = Driver.get().findElement(By.xpath("//*[@id='alert_content']")).getAttribute("innerHTML");
+
+        string ="The new payee "+string+" was successfully created.";
+
+
+        Assert.assertTrue("the new payee creation message isn't as expected " ,string.equals(text));
+    }
+
 
     @Then("the results should only show descripotions containing {string} but not {string}")
     public void the_results_should_only_show_descripotions_containing_but_not(String string, String string2) {

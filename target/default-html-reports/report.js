@@ -1,11 +1,11 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/FindTransactions.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/New%20Payee.feature");
 formatter.feature({
-  "name": "Find Transations in Account Activity",
+  "name": "Add new payee under pay bills",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
-  "name": "Type",
+  "name": "Add a new payee",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
@@ -19,56 +19,20 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.step({
-  "name": "the user should be able lands on \"aa\"",
+  "name": "the user should be able lands on \"pb\"",
   "keyword": "And "
 });
 formatter.step({
-  "name": "click the \"Find Transactions\"",
+  "name": "click the \"Add New Payee\"",
   "keyword": "And "
 });
 formatter.step({
-  "name": "click the \"Find\"",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "results table should show at least 1 result \"\u003ctype1\u003e\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "name": "results table should show at least 1 result \"\u003ctype2\u003e\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "name": "select for type \"\u003ctype1\u003e\"",
+  "name": "enter new payee information \"\u003cPayeeName\u003e\"\"\u003cPayeeAddress\u003e\"\"\u003cAccount\u003e\"\"\u003cPayeeDetails\u003e\"",
   "keyword": "When "
 });
 formatter.step({
-  "name": "click the \"Find\"",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "results table should show at least 1 result \"\u003ctype1\u003e\"",
+  "name": "message The new payee \"\u003cPayeeName\u003e\" was succesfully created. should be displayed",
   "keyword": "Then "
-});
-formatter.step({
-  "name": "results table should\u0027nt show \"\u003ctype2\u003e\"",
-  "keyword": "But "
-});
-formatter.step({
-  "name": "select for type \"\u003ctype2\u003e\"",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "click the \"Find\"",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "results table should show at least 1 result \"\u003ctype2\u003e\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "name": "results table should\u0027nt show \"\u003ctype1\u003e\"",
-  "keyword": "But "
 });
 formatter.examples({
   "name": "",
@@ -77,20 +41,24 @@ formatter.examples({
   "rows": [
     {
       "cells": [
-        "type1",
-        "type2"
+        "PayeeName",
+        "PayeeAddress",
+        "Account",
+        "PayeeDetails"
       ]
     },
     {
       "cells": [
-        "Deposit",
-        "Withdrawal"
+        "The Law Offices of Hyde, Price \u0026amp; Scharks",
+        "100 Same st, Anytown, USA, 10001",
+        "Checking",
+        "XYZ account"
       ]
     }
   ]
 });
 formatter.scenario({
-  "name": "Type",
+  "name": "Add a new payee",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
@@ -113,7 +81,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user should be able lands on \"aa\"",
+  "name": "the user should be able lands on \"pb\"",
   "keyword": "And "
 });
 formatter.match({
@@ -123,7 +91,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "click the \"Find Transactions\"",
+  "name": "click the \"Add New Payee\"",
   "keyword": "And "
 });
 formatter.match({
@@ -133,111 +101,21 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "click the \"Find\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.click_the(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "results table should show at least 1 result \"Deposit\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.results_table_should_show_at_least_result(java.lang.Integer,java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "results table should show at least 1 result \"Withdrawal\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.results_table_should_show_at_least_result(java.lang.Integer,java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "select for type \"Deposit\"",
+  "name": "enter new payee information \"The Law Offices of Hyde, Price \u0026amp; Scharks\"\"100 Same st, Anytown, USA, 10001\"\"Checking\"\"XYZ account\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.select_for_type(java.lang.String)"
+  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.enter_new_payee_information(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "click the \"Find\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.click_the(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "results table should show at least 1 result \"Deposit\"",
+  "name": "message The new payee \"The Law Offices of Hyde, Price \u0026amp; Scharks\" was succesfully created. should be displayed",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.results_table_should_show_at_least_result(java.lang.Integer,java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "results table should\u0027nt show \"Withdrawal\"",
-  "keyword": "But "
-});
-formatter.match({
-  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.results_table_should_nt_show(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "select for type \"Withdrawal\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.select_for_type(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "click the \"Find\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.click_the(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "results table should show at least 1 result \"Withdrawal\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.results_table_should_show_at_least_result(java.lang.Integer,java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "results table should\u0027nt show \"Deposit\"",
-  "keyword": "But "
-});
-formatter.match({
-  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.results_table_should_nt_show(java.lang.String)"
+  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.message_The_new_payee_was_succesfully_created_should_be_displayed(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
