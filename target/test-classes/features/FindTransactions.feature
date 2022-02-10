@@ -1,4 +1,3 @@
-@ft
 Feature: Find Transations in Account Activity
 
   Scenario Outline: Search Date Range
@@ -45,7 +44,7 @@ Feature: Find Transations in Account Activity
       | description | description2 |
       | ONLINE      | online       |
 
-
+  @190
   Scenario Outline: Type
     Given the user is logged in
     And the user should be able lands on "aa"

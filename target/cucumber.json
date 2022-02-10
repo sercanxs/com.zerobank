@@ -1,13 +1,13 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-02-10T12:19:13.526Z",
+        "start_timestamp": "2022-02-10T15:31:35.594Z",
         "before": [
           {
             "result": {
-              "duration": 6250571400,
+              "duration": 8607551400,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 17,
-        "name": "Search Date Range",
+        "line": 67,
+        "name": "Type",
         "description": "",
-        "id": "find-transations-in-account-activity;search-date-range;;2",
+        "id": "find-transations-in-account-activity;type;;2",
         "after": [
           {
             "result": {
-              "duration": 768481500,
+              "duration": 799129500,
               "status": "passed"
             },
             "match": {
@@ -35,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 4366032800,
+              "duration": 4535438200,
               "status": "passed"
             },
-            "line": 5,
+            "line": 49,
             "name": "the user is logged in",
             "match": {
               "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_is_logged_in()"
@@ -47,10 +47,10 @@
           },
           {
             "result": {
-              "duration": 1625160500,
+              "duration": 1615770400,
               "status": "passed"
             },
-            "line": 6,
+            "line": 50,
             "name": "the user should be able lands on \"aa\"",
             "match": {
               "arguments": [
@@ -61,14 +61,14 @@
               ],
               "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.the_user_should_be_able_lands_on(java.lang.String)"
             },
-            "keyword": "When "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 88114100,
+              "duration": 3088672600,
               "status": "passed"
             },
-            "line": 7,
+            "line": 51,
             "name": "click the \"Find Transactions\"",
             "match": {
               "arguments": [
@@ -83,32 +83,10 @@
           },
           {
             "result": {
-              "duration": 419116400,
+              "duration": 3157711800,
               "status": "passed"
             },
-            "line": 8,
-            "name": "the user enters data range from \"2012-09-01\" to \"2012-09-06\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"2012-09-01\"",
-                  "offset": 32
-                },
-                {
-                  "val": "\"2012-09-06\"",
-                  "offset": 48
-                }
-              ],
-              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.the_user_enters_data_range_from_to(java.lang.String,java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 85807300,
-              "status": "passed"
-            },
-            "line": 9,
+            "line": 52,
             "name": "click the \"Find\"",
             "match": {
               "arguments": [
@@ -123,25 +101,199 @@
           },
           {
             "result": {
-              "duration": 349172700,
+              "duration": 253126500,
               "status": "passed"
             },
-            "line": 10,
-            "name": "the results should be sorted from most recent date \"2012-09-06\" to oldest date \"2012-09-01\"",
+            "line": 53,
+            "name": "results table should show at least 1 result \"Deposit\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"2012-09-06\"",
-                  "offset": 51
+                  "val": "1",
+                  "offset": 35
                 },
                 {
-                  "val": "\"2012-09-01\"",
-                  "offset": 79
+                  "val": "\"Deposit\"",
+                  "offset": 44
                 }
               ],
-              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.the_results_should_be_sorted_from_most_recent_date_to_oldest_date(java.lang.String,java.lang.String)"
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.results_table_should_show_at_least_result(java.lang.Integer,java.lang.String)"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 212475600,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "results table should show at least 1 result \"Withdrawal\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 35
+                },
+                {
+                  "val": "\"Withdrawal\"",
+                  "offset": 44
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.results_table_should_show_at_least_result(java.lang.Integer,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 223638800,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "select for type \"Deposit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Deposit\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.select_for_type(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3084660900,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "click the \"Find\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Find\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.click_the(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 158460800,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "results table should show at least 1 result \"Deposit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 35
+                },
+                {
+                  "val": "\"Deposit\"",
+                  "offset": 44
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.results_table_should_show_at_least_result(java.lang.Integer,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 115929000,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "results table should\u0027nt show \"Withdrawal\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Withdrawal\"",
+                  "offset": 29
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.results_table_should_nt_show(java.lang.String)"
+            },
+            "keyword": "But "
+          },
+          {
+            "result": {
+              "duration": 191047500,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "select for type \"Withdrawal\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Withdrawal\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.select_for_type(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3074452800,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "click the \"Find\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Find\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.click_the(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 88408800,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "results table should show at least 1 result \"Withdrawal\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 35
+                },
+                {
+                  "val": "\"Withdrawal\"",
+                  "offset": 44
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.results_table_should_show_at_least_result(java.lang.Integer,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 106716400,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "results table should\u0027nt show \"Deposit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Deposit\"",
+                  "offset": 29
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.results_table_should_nt_show(java.lang.String)"
+            },
+            "keyword": "But "
           }
         ],
         "tags": [
@@ -156,15 +308,6 @@
     "id": "find-transations-in-account-activity",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/FindTransactions.feature",
-    "tags": [
-      {
-        "name": "@190",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "tags": []
   }
 ]
