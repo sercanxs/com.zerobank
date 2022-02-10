@@ -1,39 +1,38 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/payBills.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/AccountActivityNavigation.feature");
 formatter.feature({
-  "name": "Pay Bills page should have the following requirements",
+  "name": "Navigating\tto specific\taccounts in\tAccounts Activity",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@191"
+      "name": "@190"
     }
   ]
 });
 formatter.scenarioOutline({
-  "name": "Date field should\u0027nt accept Alphabetic or Special Character",
+  "name": "\u003cselection\u003e account redirect",
   "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@192"
-    }
-  ]
+  "keyword": "Scenario Outline"
 });
 formatter.step({
   "name": "the user is logged in",
   "keyword": "Given "
 });
 formatter.step({
-  "name": "the user should be able lands on \"pb\"",
+  "name": "the user should be able lands on \"as\"",
   "keyword": "When "
 });
 formatter.step({
-  "name": "User should able to complete pay operation \"\u003camount\u003e\" \"\u003cdate\u003e\"",
+  "name": "Click the \"\u003cselection\u003e\"",
   "keyword": "And "
 });
 formatter.step({
-  "name": "User should able to get failed message for datainput \"\u003cmessage\u003e\"",
+  "name": "this page should have the title \"Zero - Account Activity\"",
   "keyword": "Then "
+});
+formatter.step({
+  "name": "first selected option must be \"\u003cselection\u003e\"",
+  "keyword": "And "
 });
 formatter.examples({
   "name": "",
@@ -42,37 +41,48 @@ formatter.examples({
   "rows": [
     {
       "cells": [
-        "amount",
-        "date",
-        "message"
+        "selection"
       ]
     },
     {
       "cells": [
-        "80",
-        "\u003c_",
-        "Please fill out this field."
+        "Credit Card"
       ]
     },
     {
       "cells": [
-        "100",
-        "AA",
-        "Please fill out this field."
+        "Savings"
+      ]
+    },
+    {
+      "cells": [
+        "Brokerage"
+      ]
+    },
+    {
+      "cells": [
+        "Checking"
+      ]
+    },
+    {
+      "cells": [
+        "Credit Card"
+      ]
+    },
+    {
+      "cells": [
+        "Loan"
       ]
     }
   ]
 });
 formatter.scenario({
-  "name": "Date field should\u0027nt accept Alphabetic or Special Character",
+  "name": "Credit Card account redirect",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@191"
-    },
-    {
-      "name": "@192"
+      "name": "@190"
     }
   ]
 });
@@ -90,7 +100,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user should be able lands on \"pb\"",
+  "name": "the user should be able lands on \"as\"",
   "keyword": "When "
 });
 formatter.match({
@@ -100,21 +110,31 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User should able to complete pay operation \"80\" \"\u003c_\"",
+  "name": "Click the \"Credit Card\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.user_should_able_to_complete_pay_operation(java.lang.String,java.lang.String)"
+  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.click_the(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User should able to get failed message for datainput \"Please fill out this field.\"",
+  "name": "this page should have the title \"Zero - Account Activity\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.user_should_able_to_get_failed_message_for_datainput(java.lang.String)"
+  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.this_page_should_have_the_title(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "first selected option must be \"Credit Card\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.first_selected_option_must_be(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -123,15 +143,12 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Date field should\u0027nt accept Alphabetic or Special Character",
+  "name": "Savings account redirect",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@191"
-    },
-    {
-      "name": "@192"
+      "name": "@190"
     }
   ]
 });
@@ -149,7 +166,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user should be able lands on \"pb\"",
+  "name": "the user should be able lands on \"as\"",
   "keyword": "When "
 });
 formatter.match({
@@ -159,21 +176,295 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User should able to complete pay operation \"100\" \"AA\"",
+  "name": "Click the \"Savings\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.user_should_able_to_complete_pay_operation(java.lang.String,java.lang.String)"
+  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.click_the(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User should able to get failed message for datainput \"Please fill out this field.\"",
+  "name": "this page should have the title \"Zero - Account Activity\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.user_should_able_to_get_failed_message_for_datainput(java.lang.String)"
+  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.this_page_should_have_the_title(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "first selected option must be \"Savings\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.first_selected_option_must_be(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Brokerage account redirect",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@190"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user is logged in",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_is_logged_in()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user should be able lands on \"as\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.the_user_should_be_able_lands_on(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click the \"Brokerage\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.click_the(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "this page should have the title \"Zero - Account Activity\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.this_page_should_have_the_title(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "first selected option must be \"Brokerage\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.first_selected_option_must_be(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Checking account redirect",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@190"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user is logged in",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_is_logged_in()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user should be able lands on \"as\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.the_user_should_be_able_lands_on(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click the \"Checking\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.click_the(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "this page should have the title \"Zero - Account Activity\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.this_page_should_have_the_title(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "first selected option must be \"Checking\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.first_selected_option_must_be(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Credit Card account redirect",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@190"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user is logged in",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_is_logged_in()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user should be able lands on \"as\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.the_user_should_be_able_lands_on(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click the \"Credit Card\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.click_the(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "this page should have the title \"Zero - Account Activity\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.this_page_should_have_the_title(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "first selected option must be \"Credit Card\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.first_selected_option_must_be(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Loan account redirect",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@190"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user is logged in",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_is_logged_in()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user should be able lands on \"as\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.the_user_should_be_able_lands_on(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click the \"Loan\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.click_the(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "this page should have the title \"Zero - Account Activity\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.this_page_should_have_the_title(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "first selected option must be \"Loan\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.first_selected_option_must_be(java.lang.String)"
 });
 formatter.result({
   "status": "passed"

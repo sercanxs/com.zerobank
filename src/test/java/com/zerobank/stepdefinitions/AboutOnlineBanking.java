@@ -32,21 +32,43 @@ public class AboutOnlineBanking {
         Driver.get().findElement(By.id("pay_saved_payees")).click();
 
     }
+
+    @When("Click the {string}")
+    public void click_the(String string) {
+        if (string.equals("Credit Card")){
+            Driver.get().findElement(By.xpath("(//*[text()='"+string+"'])[2]")).click();
+        }
+        Driver.get().findElement(By.xpath("//*[text()='" + string + "']")).click();
+
+    }
+
+    @Then("first selected option must be {string}")
+    public void first_selected_option_must_be(String string) {
+
+            WebElement A = Driver.get().findElement(By.id("aa_accountId"));
+            Select dropdown = new Select(A);
+            String expected = dropdown.getFirstSelectedOption().getText();
+            Assert.assertTrue("dropdown first option isn't expected", string.equals(expected));
+
+    }
+
     @Then("user should able to get this message {string}")
     public void user_should_able_to_get_this_message(String string) {
         String actual = Driver.get().findElement(By.xpath("//div[@id='alert_content']/span")).getAttribute("innerHTML");
-        Assert.assertTrue("they are not same",string.equals(actual));
+        Assert.assertTrue("they are not same", string.equals(actual));
     }
+
     @Then("user should able to get this failed message {string}")
     public void user_should_able_to_get_this_failed_message(String string) {
         String actual = Driver.get().findElement(By.id("sp_amount")).getAttribute("validationMessage");
-        Assert.assertTrue("they are not same",string.equals(actual));
+        Assert.assertTrue("they are not same", string.equals(actual));
 
     }
+
     @Then("User should able to get failed message for datainput {string}")
     public void user_should_able_to_get_failed_message_for_datainput(String string) {
         String actual = Driver.get().findElement(By.id("sp_date")).getAttribute("validationMessage");
-        Assert.assertTrue("they are not same",string.equals(actual));
+        Assert.assertTrue("they are not same", string.equals(actual));
 
     }
 
@@ -56,13 +78,14 @@ public class AboutOnlineBanking {
         OBPages obpages = new OBPages();
         obpages.showTitle(expected);
     }
+
     @Then("Account summary page should have to following account types {string}")
     public void account_summary_page_should_have_to_following_account_types(String types) {
 
 
-        String text = Driver.get().findElement(By.xpath("//*[text()='"+types+"']")).getAttribute("innerHTML");
+        String text = Driver.get().findElement(By.xpath("//*[text()='" + types + "']")).getAttribute("innerHTML");
         System.out.println(text);
-        Assert.assertTrue("there are something wrong",text.equals(types));
+        Assert.assertTrue("there are something wrong", text.equals(types));
 
 
     }
@@ -71,7 +94,7 @@ public class AboutOnlineBanking {
     public void the_user_should_be_able_to_see(String column) {
 
         String text = Driver.get().findElement(By.xpath("//*[text()='Credit Card']/..")).getText();
-        Assert.assertTrue("Column's aren't same",text.contains(column));
+        Assert.assertTrue("Column's aren't same", text.contains(column));
     }
 
     @Then("In the Account Dropdown default option should be {string}")
@@ -80,7 +103,7 @@ public class AboutOnlineBanking {
 
         Select select = new Select(dropDown);
         List<WebElement> options = select.getOptions();
-        Assert.assertTrue("Dropdown default Option isn't the same",options.get(0).getText().equals(string));
+        Assert.assertTrue("Dropdown default Option isn't the same", options.get(0).getText().equals(string));
 
     }
 
@@ -97,32 +120,26 @@ public class AboutOnlineBanking {
             list.add(option.getText());
 
         }
-        Assert.assertTrue("dropdowns contains all expected",list.containsAll(dropdownOptions));
-
+        Assert.assertTrue("dropdowns contains all expected", list.containsAll(dropdownOptions));
 
 
     }
+
     @Then("Transaction Table should have following column names")
     public void transaction_Table_should_have_following_column_names(List<String> columns) {
         String text = Driver.get().findElement(By.xpath("//*[text()='Description']/..")).getText();
         for (String column : columns) {
 
-           Assert.assertTrue("Actual columns aren't same with expected columns",text.contains(column));
+            Assert.assertTrue("Actual columns aren't same with expected columns", text.contains(column));
 
         }
 
     }
 
-public static void m1(){
+    public static void m1() {
 
 
-
-
-
-}
-
-
-
+    }
 
 
 }

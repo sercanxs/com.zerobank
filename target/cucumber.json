@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-02-10T07:09:48.698Z",
+        "start_timestamp": "2022-02-10T10:40:24.783Z",
         "before": [
           {
             "result": {
-              "duration": 2284908300,
+              "duration": 6174446400,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 40,
-        "name": "Date field should\u0027nt accept Alphabetic or Special Character",
+        "line": 13,
+        "name": "Credit Card account redirect",
         "description": "",
-        "id": "pay-bills-page-should-have-the-following-requirements;date-field-should-nt-accept-alphabetic-or-special-character;;2",
+        "id": "navigating-to-specific-accounts-in-accounts-activity;\u003cselection\u003e-account-redirect;;2",
         "after": [
           {
             "result": {
-              "duration": 684168800,
+              "duration": 765564300,
               "status": "passed"
             },
             "match": {
@@ -35,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 4878577500,
+              "duration": 4533045400,
               "status": "passed"
             },
-            "line": 31,
+            "line": 5,
             "name": "the user is logged in",
             "match": {
               "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_is_logged_in()"
@@ -47,15 +47,15 @@
           },
           {
             "result": {
-              "duration": 1532253300,
+              "duration": 1175606700,
               "status": "passed"
             },
-            "line": 32,
-            "name": "the user should be able lands on \"pb\"",
+            "line": 6,
+            "name": "the user should be able lands on \"as\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"pb\"",
+                  "val": "\"as\"",
                   "offset": 33
                 }
               ],
@@ -65,60 +65,71 @@
           },
           {
             "result": {
-              "duration": 302131600,
+              "duration": 799559200,
               "status": "passed"
             },
-            "line": 33,
-            "name": "User should able to complete pay operation \"80\" \"\u003c_\"",
+            "line": 7,
+            "name": "Click the \"Credit Card\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"80\"",
-                  "offset": 43
-                },
-                {
-                  "val": "\"\u003c_\"",
-                  "offset": 48
+                  "val": "\"Credit Card\"",
+                  "offset": 10
                 }
               ],
-              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.user_should_able_to_complete_pay_operation(java.lang.String,java.lang.String)"
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.click_the(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 53881500,
+              "duration": 9572800,
               "status": "passed"
             },
-            "line": 34,
-            "name": "User should able to get failed message for datainput \"Please fill out this field.\"",
+            "line": 8,
+            "name": "this page should have the title \"Zero - Account Activity\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Please fill out this field.\"",
-                  "offset": 53
+                  "val": "\"Zero - Account Activity\"",
+                  "offset": 32
                 }
               ],
-              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.user_should_able_to_get_failed_message_for_datainput(java.lang.String)"
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.this_page_should_have_the_title(java.lang.String)"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 150339900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "first selected option must be \"Credit Card\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Credit Card\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.first_selected_option_must_be(java.lang.String)"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@191"
-          },
-          {
-            "name": "@192"
+            "name": "@190"
           }
         ]
       },
       {
-        "start_timestamp": "2022-02-10T07:09:58.521Z",
+        "start_timestamp": "2022-02-10T10:40:38.475Z",
         "before": [
           {
             "result": {
-              "duration": 1240386900,
+              "duration": 5190729900,
               "status": "passed"
             },
             "match": {
@@ -126,14 +137,14 @@
             }
           }
         ],
-        "line": 41,
-        "name": "Date field should\u0027nt accept Alphabetic or Special Character",
+        "line": 14,
+        "name": "Savings account redirect",
         "description": "",
-        "id": "pay-bills-page-should-have-the-following-requirements;date-field-should-nt-accept-alphabetic-or-special-character;;3",
+        "id": "navigating-to-specific-accounts-in-accounts-activity;\u003cselection\u003e-account-redirect;;3",
         "after": [
           {
             "result": {
-              "duration": 663837200,
+              "duration": 759180700,
               "status": "passed"
             },
             "match": {
@@ -146,10 +157,10 @@
         "steps": [
           {
             "result": {
-              "duration": 5227033600,
+              "duration": 4483301700,
               "status": "passed"
             },
-            "line": 31,
+            "line": 5,
             "name": "the user is logged in",
             "match": {
               "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_is_logged_in()"
@@ -158,15 +169,15 @@
           },
           {
             "result": {
-              "duration": 1619637300,
+              "duration": 1705176300,
               "status": "passed"
             },
-            "line": 32,
-            "name": "the user should be able lands on \"pb\"",
+            "line": 6,
+            "name": "the user should be able lands on \"as\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"pb\"",
+                  "val": "\"as\"",
                   "offset": 33
                 }
               ],
@@ -176,63 +187,562 @@
           },
           {
             "result": {
-              "duration": 305808900,
+              "duration": 657234500,
               "status": "passed"
             },
-            "line": 33,
-            "name": "User should able to complete pay operation \"100\" \"AA\"",
+            "line": 7,
+            "name": "Click the \"Savings\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"100\"",
-                  "offset": 43
-                },
-                {
-                  "val": "\"AA\"",
-                  "offset": 49
+                  "val": "\"Savings\"",
+                  "offset": 10
                 }
               ],
-              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.user_should_able_to_complete_pay_operation(java.lang.String,java.lang.String)"
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.click_the(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 40592100,
+              "duration": 8933100,
               "status": "passed"
             },
-            "line": 34,
-            "name": "User should able to get failed message for datainput \"Please fill out this field.\"",
+            "line": 8,
+            "name": "this page should have the title \"Zero - Account Activity\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Please fill out this field.\"",
-                  "offset": 53
+                  "val": "\"Zero - Account Activity\"",
+                  "offset": 32
                 }
               ],
-              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.user_should_able_to_get_failed_message_for_datainput(java.lang.String)"
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.this_page_should_have_the_title(java.lang.String)"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 86701900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "first selected option must be \"Savings\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Savings\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.first_selected_option_must_be(java.lang.String)"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@191"
+            "name": "@190"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-10T10:40:51.367Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5223232600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Brokerage account redirect",
+        "description": "",
+        "id": "navigating-to-specific-accounts-in-accounts-activity;\u003cselection\u003e-account-redirect;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 752575200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4444475900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is logged in",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_is_logged_in()"
+            },
+            "keyword": "Given "
           },
           {
-            "name": "@192"
+            "result": {
+              "duration": 1081174300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user should be able lands on \"as\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"as\"",
+                  "offset": 33
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.the_user_should_be_able_lands_on(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 665820400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click the \"Brokerage\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Brokerage\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.click_the(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7963800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "this page should have the title \"Zero - Account Activity\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Zero - Account Activity\"",
+                  "offset": 32
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.this_page_should_have_the_title(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 132781400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "first selected option must be \"Brokerage\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Brokerage\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.first_selected_option_must_be(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@190"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-10T10:41:03.676Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5177850500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Checking account redirect",
+        "description": "",
+        "id": "navigating-to-specific-accounts-in-accounts-activity;\u003cselection\u003e-account-redirect;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 792447900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4455836800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is logged in",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_is_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1640827600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user should be able lands on \"as\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"as\"",
+                  "offset": 33
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.the_user_should_be_able_lands_on(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1504142300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click the \"Checking\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Checking\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.click_the(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8282200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "this page should have the title \"Zero - Account Activity\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Zero - Account Activity\"",
+                  "offset": 32
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.this_page_should_have_the_title(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 108499100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "first selected option must be \"Checking\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Checking\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.first_selected_option_must_be(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@190"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-10T10:41:17.366Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5203461400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Credit Card account redirect",
+        "description": "",
+        "id": "navigating-to-specific-accounts-in-accounts-activity;\u003cselection\u003e-account-redirect;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 759553200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4473768300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is logged in",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_is_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1163313400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user should be able lands on \"as\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"as\"",
+                  "offset": 33
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.the_user_should_be_able_lands_on(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 744666700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click the \"Credit Card\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Credit Card\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.click_the(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6944300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "this page should have the title \"Zero - Account Activity\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Zero - Account Activity\"",
+                  "offset": 32
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.this_page_should_have_the_title(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 135696000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "first selected option must be \"Credit Card\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Credit Card\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.first_selected_option_must_be(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@190"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-10T10:41:29.855Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5232397600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Loan account redirect",
+        "description": "",
+        "id": "navigating-to-specific-accounts-in-accounts-activity;\u003cselection\u003e-account-redirect;;7",
+        "after": [
+          {
+            "result": {
+              "duration": 745687700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6691923500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is logged in",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_is_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1739277800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user should be able lands on \"as\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"as\"",
+                  "offset": 33
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.the_user_should_be_able_lands_on(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1020883500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click the \"Loan\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Loan\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.click_the(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7961900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "this page should have the title \"Zero - Account Activity\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Zero - Account Activity\"",
+                  "offset": 32
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.this_page_should_have_the_title(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 125503100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "first selected option must be \"Loan\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Loan\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.first_selected_option_must_be(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@190"
           }
         ]
       }
     ],
-    "name": "Pay Bills page should have the following requirements",
+    "name": "Navigating\tto specific\taccounts in\tAccounts Activity",
     "description": "",
-    "id": "pay-bills-page-should-have-the-following-requirements",
+    "id": "navigating-to-specific-accounts-in-accounts-activity",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/payBills.feature",
+    "uri": "file:src/test/resources/features/AccountActivityNavigation.feature",
     "tags": [
       {
-        "name": "@191",
+        "name": "@190",
         "type": "Tag",
         "location": {
           "line": 1,
