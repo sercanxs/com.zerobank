@@ -1,6 +1,7 @@
 package com.zerobank.stepdefinitions;
 
 import com.zerobank.pages.OBPages;
+import com.zerobank.pages.PayBills;
 import com.zerobank.utilities.Driver;
 import io.cucumber.java.bs.A;
 import io.cucumber.java.en.And;
@@ -8,6 +9,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -81,14 +83,37 @@ Driver.get().findElement(By.id("np_new_payee_details")).sendKeys(PayeeDetails);
 Driver.get().findElement(By.id("add_new_payee")).click();
 
     }
+    @When("click the pay")
+    public void click_the_pay() {
+        PayBills pb = new PayBills();
+        pb.purchasebutton.click();
+    }
+    @Then("error message should be displayed for not selecting currency")
+    public void error_message_should_be_displayed_for_not_selecting_currency() {
+
+        Alert alert = Driver.get().switchTo().alert();
+    Assert.assertTrue("Alert part isn't expected",alert.getText().contains(" valid values."));
+
+    }
+
+
     @Then("following curriencies should be avaliable")
     public void following_curriencies_should_be_avaliable(List<String> expectedcurriencies) {
         WebElement actualcurriencies = Driver.get().findElement(By.id("pc_currency"));
-        Select select = new Select(actualcurriencies);
-        for (WebElement option : select.getOptions()) {
 
-            Assert.assertTrue("Foreign currencies aren't same with expected",expectedcurriencies.contains(option.getText()));
+        Select select = new Select(actualcurriencies);
+       List<WebElement> options = select.getOptions();
+        int size = options.size();
+        String message="Foreign currincies are expected";
+        for (int x=1;x<size;x++){
+
+            Assert.assertTrue(message,expectedcurriencies.contains(options.get(x).getText()));
+
         }
+
+
+
+
 
 
     }

@@ -3,26 +3,27 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-02-10T18:41:27.203Z",
+        "start_timestamp": "2022-02-10T19:37:24.024Z",
         "before": [
           {
             "result": {
-              "duration": 15622800,
-              "status": "skipped"
+              "duration": 8918040700,
+              "status": "passed"
             },
             "match": {
               "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
             }
           }
         ],
-        "line": 3,
-        "name": "Available currencies",
+        "line": 26,
+        "name": "Error message for not selecting currency",
         "description": "",
-        "id": "purchase-foreign-currency;available-currencies",
+        "id": "purchase-foreign-currency;error-message-for-not-selecting-currency",
         "after": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 851562700,
+              "status": "passed"
             },
             "match": {
               "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
@@ -34,9 +35,10 @@
         "steps": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 4925989000,
+              "status": "passed"
             },
-            "line": 4,
+            "line": 27,
             "name": "the user is logged in",
             "match": {
               "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_is_logged_in()"
@@ -45,9 +47,10 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 1453466500,
+              "status": "passed"
             },
-            "line": 5,
+            "line": 28,
             "name": "the user should be able lands on \"pb\"",
             "match": {
               "arguments": [
@@ -62,9 +65,10 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 3114188100,
+              "status": "passed"
             },
-            "line": 6,
+            "line": 29,
             "name": "click the \"Purchase Foreign Currency\"",
             "match": {
               "arguments": [
@@ -79,73 +83,26 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 132803400,
+              "status": "passed"
             },
-            "line": 7,
-            "name": "following curriencies should be avaliable",
-            "match": {},
-            "rows": [
-              {
-                "cells": [
-                  "Australia (dollar)"
-                ]
-              },
-              {
-                "cells": [
-                  "Canada (dollar)"
-                ]
-              },
-              {
-                "cells": [
-                  "Switzerland (franc)"
-                ]
-              },
-              {
-                "cells": [
-                  "China (yuan)"
-                ]
-              },
-              {
-                "cells": [
-                  "Denmark (krone)"
-                ]
-              },
-              {
-                "cells": [
-                  "Eurozone (euro)"
-                ]
-              },
-              {
-                "cells": [
-                  "Great Britain (pound)"
-                ]
-              },
-              {
-                "cells": [
-                  "Japan (yen)"
-                ]
-              },
-              {
-                "cells": [
-                  "Mexico (peso)"
-                ]
-              },
-              {
-                "cells": [
-                  "Norway (krone)"
-                ]
-              },
-              {
-                "cells": [
-                  "New\tZealand (dollar)"
-                ]
-              },
-              {
-                "cells": [
-                  "Singapore (dollar)"
-                ]
-              }
-            ],
+            "line": 30,
+            "name": "click the pay",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.click_the_pay()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15771300,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "error message should be displayed for not selecting currency",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.error_message_should_be_displayed_for_not_selecting_currency()"
+            },
             "keyword": "Then "
           }
         ],
