@@ -1,4 +1,4 @@
-@aan
+@aan @smoke
 Feature: Navigating	to specific	accounts in	Accounts Activity
 
   Scenario Outline: <selection> account redirect

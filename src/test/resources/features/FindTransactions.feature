@@ -1,4 +1,4 @@
-@ft
+@ft @smoke
 Feature: Find Transactions in Account Activity
 
   Scenario Outline: Search Date Range

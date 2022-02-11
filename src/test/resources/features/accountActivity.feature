@@ -1,4 +1,4 @@
-@aa
+@aa @smoke
 Feature: Account Activity page should have the title Zero - Account Activity
 
   Scenario: Account Activity page should have the title Zero - Account Activity

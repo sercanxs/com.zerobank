@@ -1,4 +1,4 @@
-@pb
+@pb @smoke
 Feature: Pay Bills page should have the following requirements
 
   Scenario: Pay Bills page should have the title "Zero - Pay Bills"

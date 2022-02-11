@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.zerobank.runners.CukesRunner" time="1,269.124" tests="34" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.zerobank.runners.FailedTestRunner" time="0" tests="0" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -61,38 +61,4 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="Credit Card account redirect" classname="Navigating	to specific	accounts in	Accounts Activity" time="35.957"/>
-  <testcase name="Credit Card account redirect" classname="Navigating	to specific	accounts in	Accounts Activity" time="61.422"/>
-  <testcase name="Savings account redirect" classname="Navigating	to specific	accounts in	Accounts Activity" time="28.828"/>
-  <testcase name="Brokerage account redirect" classname="Navigating	to specific	accounts in	Accounts Activity" time="28.803"/>
-  <testcase name="Checking account redirect" classname="Navigating	to specific	accounts in	Accounts Activity" time="29.769"/>
-  <testcase name="Loan account redirect" classname="Navigating	to specific	accounts in	Accounts Activity" time="41.128"/>
-  <testcase name="Search Date Range" classname="Find Transactions in Account Activity" time="63.484"/>
-  <testcase name="Search Description" classname="Find Transactions in Account Activity" time="56.36"/>
-  <testcase name="Search Description is case sensitive" classname="Find Transactions in Account Activity" time="43.361"/>
-  <testcase name="Type" classname="Find Transactions in Account Activity" time="57.482"/>
-  <testcase name="Add a new payee" classname="Add new payee under pay bills" time="55.172"/>
-  <testcase name="Available currencies" classname="Purchase foreign currency" time="50.774"/>
-  <testcase name="Error message for not selecting currency" classname="Purchase foreign currency" time="36.294"/>
-  <testcase name="Error message for not selecting amount" classname="Purchase foreign currency" time="46.108"/>
-  <testcase name="Account Activity page should have the title Zero - Account Activity" classname="Account Activity page should have the title Zero - Account Activity" time="41.33"/>
-  <testcase name="In the Account Dropdown default option should be savings." classname="Account Activity page should have the title Zero - Account Activity" time="29.128"/>
-  <testcase name="Account Dropdown should have the other options." classname="Account Activity page should have the title Zero - Account Activity" time="31.45"/>
-  <testcase name="Transaction Table should have following column names" classname="Account Activity page should have the title Zero - Account Activity" time="70.972"/>
-  <testcase name="Account summary page should have the title &quot;Zero - Account Summary&quot;" classname="Account summary page should have the title Zero – Account summary" time="46.32"/>
-  <testcase name="Account summary page should have to following account types" classname="Account summary page should have the title Zero – Account summary" time="45.25"/>
-  <testcase name="Account summary page should have to following account types" classname="Account summary page should have the title Zero – Account summary" time="30.37"/>
-  <testcase name="Account summary page should have to following account types" classname="Account summary page should have the title Zero – Account summary" time="29.377"/>
-  <testcase name="Account summary page should have to following account types" classname="Account summary page should have the title Zero – Account summary" time="24.434"/>
-  <testcase name="Credit Accounts table must have columns Account, Credit Card, Balance." classname="Account summary page should have the title Zero – Account summary" time="24.746"/>
-  <testcase name="Credit Accounts table must have columns Account, Credit Card, Balance." classname="Account summary page should have the title Zero – Account summary" time="25.211"/>
-  <testcase name="Credit Accounts table must have columns Account, Credit Card, Balance." classname="Account summary page should have the title Zero – Account summary" time="38.94"/>
-  <testcase name="Login as Valid" classname="Users should be able to login" time="23.193"/>
-  <testcase name="Login as Invalid" classname="Users should be able to login" time="19.74"/>
-  <testcase name="Login as Blank" classname="Users should be able to login" time="20.779"/>
-  <testcase name="Pay Bills page should have the title &quot;Zero - Pay Bills&quot;" classname="Pay Bills page should have the following requirements" time="26.07"/>
-  <testcase name="User should able to complete pay operation" classname="Pay Bills page should have the following requirements" time="26.759"/>
-  <testcase name="User should&apos;nt able to complete pay operation with no inputs" classname="Pay Bills page should have the following requirements" time="27.002"/>
-  <testcase name="Date field should&apos;nt accept Alphabetic or Special Character" classname="Pay Bills page should have the following requirements" time="25.726"/>
-  <testcase name="Date field should&apos;nt accept Alphabetic or Special Character" classname="Pay Bills page should have the following requirements" time="26.58"/>
 </testsuite>

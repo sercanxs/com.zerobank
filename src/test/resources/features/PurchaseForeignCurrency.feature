@@ -1,4 +1,4 @@
-@pfn
+@pfn @smoke
 Feature: Purchase foreign currency
 
 
