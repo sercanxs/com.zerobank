@@ -1,4 +1,4 @@
-@np
+@np @smoke
 Feature: Add new payee under pay bills
 
 

@@ -1,3 +1,4 @@
+@pfn @smoke
 Feature: Purchase foreign currency
 
 
@@ -22,7 +23,7 @@ Feature: Purchase foreign currency
       | Singapore (dollar)    |
       | Thailand (baht)       |
 
-  @190
+
   Scenario Outline: Error message for not selecting <currency>
     Given the user is logged in
     And the user should be able lands on "pb"

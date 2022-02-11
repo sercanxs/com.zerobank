@@ -1,4 +1,4 @@
-@as
+@as @smoke
 Feature: Account summary page should have the title Zero – Account summary
 
   Scenario: Account summary page should have the title "Zero - Account Summary"
