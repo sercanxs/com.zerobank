@@ -1,0 +1,245 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-10T20:02:28.192Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6481133400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 35,
+        "name": "Error message for not selecting currency",
+        "description": "",
+        "id": "purchase-foreign-currency;error-message-for-not-selecting-\u003ccurrency\u003e;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 809523800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4528071800,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "the user is logged in",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_is_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1478350800,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "the user should be able lands on \"pb\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"pb\"",
+                  "offset": 33
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.the_user_should_be_able_lands_on(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3099934100,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "click the \"Purchase Foreign Currency\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Purchase Foreign Currency\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.click_the(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 165152500,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "click the purchase with \"amount\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"amount\"",
+                  "offset": 24
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.click_the_purchase_with(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7978000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "error message should be displayed for not selecting input",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.error_message_should_be_displayed_for_not_selecting_input()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@190"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-10T20:02:44.846Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5446904700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 36,
+        "name": "Error message for not selecting amount",
+        "description": "",
+        "id": "purchase-foreign-currency;error-message-for-not-selecting-\u003ccurrency\u003e;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 775959100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4288229800,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "the user is logged in",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_is_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1610836400,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "the user should be able lands on \"pb\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"pb\"",
+                  "offset": 33
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.the_user_should_be_able_lands_on(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3092331400,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "click the \"Purchase Foreign Currency\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Purchase Foreign Currency\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.click_the(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 502612700,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "click the purchase with \"currency\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"currency\"",
+                  "offset": 24
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.click_the_purchase_with(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5985600,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "error message should be displayed for not selecting input",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.AboutOnlineBanking.error_message_should_be_displayed_for_not_selecting_input()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@190"
+          }
+        ]
+      }
+    ],
+    "name": "Purchase foreign currency",
+    "description": "",
+    "id": "purchase-foreign-currency",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/PurchaseForeignCurrency.feature",
+    "tags": []
+  }
+]
